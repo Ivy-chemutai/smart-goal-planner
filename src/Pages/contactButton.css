@@ -1,0 +1,47 @@
+.floating-contact {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  background: var(--primary-gradient);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.contact-text {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-text {
+    display: none;
+  }
+  
+  .contact-button {
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  .contact-icon {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,153 @@
+.new-goal-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.new-goal-container h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.new-goal-container h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+.goal-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #2ecc71;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.input-with-icon input {
+  padding-left: 25px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.primary {
+  background-color: #2ecc71;
+  color: white;
+}
+
+button.primary:hover:not(:disabled) {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+button.secondary:hover:not(:disabled) {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Animation for form appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.goal-form {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .new-goal-container {
+    padding: 15px;
+  }
+  
+  .goal-form {
+    padding: 20px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+}
