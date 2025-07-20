@@ -53,4 +53,9 @@ src/
 - Address: Moringa School, Ngong Road, Nairobi
 
 ## Troubleshooting
-If you have issues, ensure the JSON server is running on port 3000 and check the browser console for errors.
+If you encounter issues, please make sure the JSON server is running on port 3000 and check the browser console for any errors.
+
+##AUTHOR
+ivvy.
+
+HAPPY CODING!
